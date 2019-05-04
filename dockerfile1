@@ -1,0 +1,3 @@
+FROM ubuntu:latest
+MAINTAINER a 'freeai'
+COPY test.html /root/test.html
