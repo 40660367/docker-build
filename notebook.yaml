@@ -1,0 +1,12 @@
+apiversion: v1
+kind: pod
+metadata:
+  name: notebook
+  label:
+    app:jupyter-notebook
+spec:
+  containers:
+    name: notebook
+    image: 40660367/myub18_notebook
+    command: ['jupyter']
+    args: ['notebook','--allow-root','--ip=0.0.0.0']
